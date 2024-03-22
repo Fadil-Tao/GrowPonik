@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function CourseCard({
     title = 'Title',
-    img = 'https://placekitten.com/200/300',
+    img = 'https://placebear.com/200/300',
     desc = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit Necessitatibus quasi beatae iure fugit provident tempora molestiae laborum ad praesentium illo ipsam delectus eumreprehenderit eveniet voluptatibus consequatur totamperferendis voluptas.',
     to,
 }) {

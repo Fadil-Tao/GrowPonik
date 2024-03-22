@@ -3,27 +3,41 @@ import CourseCardContainer from '../components/_learning-page/CourseContainer';
 
 const courseList = [
     {
-        title: 'Seed Selection and Planting',
-        desc: 'This topic covers the importance of selecting appropriate seeds based on factors such as climate, soil type, and intended use. It also includes guidance on proper planting techniques, including seed depth, spacing, and timing.',
-        to: 'seedselection',
+        title: 'Pengenalan Hidroponik',
+        desc: 'Topik ini berisi mengenai pengenalan hidroponik, Manfaat Hidroponik, dan jenis tanaman hidroponik',
+        to: 'pengenalanHidroponik',
     },
     {
-        title: 'Irrigation Methods and Water Management',
-        desc: 'This topic covers the importance of selecting appropriate seeds based on factors such as climate, soil type, and intended use. It also includes guidance on proper planting techniques, including seed depth, spacing, and timing.',
-        to: 'seedselection',
+        title: 'Metode Penanaman dengan Hidroponik',
+        desc: 'Topik ini berisi mengenai berbagai macam teknik penanaman dengan Hidroponik.',
+        to: 'metodeHidroponik',
     },
     {
-        title: 'Soil Preparation and Conservation',
-        desc: 'This topic covers the importance of selecting appropriate seeds based on factors such as climate, soil type, and intended use. It also includes guidance on proper planting techniques, including seed depth, spacing, and timing.',
-        to: 'seedselection',
+        title: 'Menanam dengan teknik Wick System',
+        desc: 'Topik ini membahas suatu teknik penanaman hidroponik yang bernama wick system.',
+        to: 'wickSystem',
     },
 ];
+
+
 
 const list = [
     {
         title: 'Seed Selection and Planting',
         desc: 'This topic covers the importance of selecting appropriate seeds based on factors such as climate, soil type, and intended use. It also includes guidance on proper planting techniques, including seed depth, spacing, and timing.',
         to: 'seedselection',
+    },
+    {
+        img: 'https://placebear.com/300/200',
+        title: 'How regenerative agriculture is changing the game?',
+        to: 'rootbear',
+        desc: 'Discover how this innovative approach is improving soil health, boosting yields, and creating a more resilient future for our farms.',
+    },
+    {
+        img: 'https://placebear.com/300/200',
+        title: 'rootbear!',
+        to: 'rootbear',
+        desc: 'Look Theres A bear!',
     },
 ];
 
