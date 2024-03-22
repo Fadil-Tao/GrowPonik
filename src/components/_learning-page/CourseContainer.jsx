@@ -13,6 +13,7 @@ export default function CourseCardContainer({ array, title }) {
                                     to={data.to}
                                     desc={data.desc}
                                     title={data.title}
+                                    img={data.img}
                                 />
                             </li>
                         );
