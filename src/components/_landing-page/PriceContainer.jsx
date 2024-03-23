@@ -16,7 +16,10 @@ export default function PriceContainer() {
                 </li>
             </ul>
             <div className='flex justify-center items-center my-5'>
-                <Link to={'/langganan'} className='text-primaryGreen font-semibold transition duration-300 ease-in-out transform hover:scale-105'>
+                <Link
+                    to={'/langganan'}
+                    className='text-primaryGreen font-semibold transition duration-300 ease-in-out transform hover:scale-105'
+                >
                     Lihat Lebih Lanjut
                 </Link>
             </div>

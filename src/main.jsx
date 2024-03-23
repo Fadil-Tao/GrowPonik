@@ -57,13 +57,17 @@ const router = createBrowserRouter([
                 element: <PricePage />,
             },
             {
-                path:'komunitas',
-                element:<CommunityPage/>
-            }
+                path: 'komunitas',
+                element: <CommunityPage />,
+            },
         ],
     },
     {
-        path: 'learning/:IdLearning',
+        path: 'learning/:IdLearning/',
+        element: <CoursePage />,
+    },
+    {
+        path: 'learning/:IdLearning/:index',
         element: <CoursePage />,
     },
     {
