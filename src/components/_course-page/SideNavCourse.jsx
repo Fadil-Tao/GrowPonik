@@ -1,8 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import DropDownNav from '../shared/DropDown';
+import { Link, useParams } from 'react-router-dom';
 
 export default function SideNavCourse() {
     const [isOpen, setIsOpen] = useState(true);
+    const { IdLearning } = useParams();
+    const index = parseInt(useParams().index);
+    const [data, setData] = useState();
+    const [loading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await import(
+                    `../../DummyData/${IdLearning}.json`
+                );
+                const data = response.default;
+                setData(data);
+                setIsLoading(false);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        console.log();
+        fetchData();
+    }, [IdLearning]);
+
+    if (loading) return <div>Loading...</div>;
     return (
         <>
             <div className='relative z-10'>
@@ -31,20 +56,21 @@ export default function SideNavCourse() {
                         </div>
                         <ul className=' py-2 px-6 font-nunito'>
                             <li>
-                                <DropDownNav title={'Belajar Ngoding'}>
+                                <DropDownNav title={data.title}>
                                     <div className='ml-12'>
-                                        <div>Apple</div>
-                                        <div>Pineapple</div>
-                                        <div>WaterMelon</div>
-                                    </div>
-                                </DropDownNav>
-                            </li>
-                            <li>
-                                <DropDownNav title={'Belajar Ngolok'}>
-                                    <div className='ml-12'>
-                                        <div>Apple</div>
-                                        <div>Pineapple</div>
-                                        <div>WaterMelon</div>
+                                        {data.modules.map((data, index) => {
+                                            return (
+                                                <ul>
+                                                    <li className='list-disc'>
+                                                        <Link
+                                                            to={`/learning/${IdLearning}/${index}`}
+                                                        >
+                                                            {data.subtitles}
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            );
+                                        })}
                                     </div>
                                 </DropDownNav>
                             </li>
