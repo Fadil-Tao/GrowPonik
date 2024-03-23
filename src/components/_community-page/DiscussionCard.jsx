@@ -36,12 +36,12 @@ export default function DiscussionCard() {
                     />
                     <IconDiscussion
                         amoun={10}
-                        title={'Like'}
+                        title={'Upvote'}
                         icon={<BiUpvote />}
                     />
                     <IconDiscussion
                         amoun={10}
-                        title={'Like'}
+                        title={'Downvote'}
                         icon={<BiDownvote />}
                     />
                 </div>

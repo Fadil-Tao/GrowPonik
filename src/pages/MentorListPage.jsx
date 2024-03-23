@@ -1,4 +1,7 @@
 import MentorshipCard from '../components/_mentorList-page/MentorCard';
+import Person1 from '../assets/Person1.png';
+import Person2 from '../assets/Person2.png';
+import Person3 from '../assets/Person3.png';
 
 export default function MentorListPage() {
     return (
@@ -9,9 +12,9 @@ export default function MentorListPage() {
                 </h1>
             </div>
             <div>
-                <MentorshipCard />
-                <MentorshipCard />
-                <MentorshipCard />
+                <MentorshipCard name={'Dimas Subagio'} img={Person1} />
+                <MentorshipCard name={'Rizal Susanto'} img={Person2} />
+                <MentorshipCard name={'Diana Singh'} img={Person3} />
             </div>
         </div>
     );
