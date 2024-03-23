@@ -1,5 +1,8 @@
 import MentorCard from './MentorCards';
 import { Link } from 'react-router-dom';
+import Person1 from '../../assets/Person1.png'
+import Person2 from '../../assets/Person2.png'
+import Person3 from '../../assets/Person3.png'
 
 export default function MentorsContainer() {
     return (
@@ -11,9 +14,9 @@ export default function MentorsContainer() {
                 <div></div>
             </div>
             <div className='flex justify-evenly flex-wrap'>
-                <MentorCard />
-                <MentorCard />
-                <MentorCard />
+                <MentorCard img={Person1} name={'Mr. Dimas Subagio'}/>
+                <MentorCard img={Person2} name={'Mr. Rizal Susanto'}/>
+                <MentorCard img={Person3} name={'Mrs Diana Singh'}/>
             </div>
             <div className='text-center font-medium text-primaryGreen my-4'>
                 <Link
