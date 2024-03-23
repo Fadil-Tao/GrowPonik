@@ -1,11 +1,16 @@
+/* eslint-disable react/prop-types */
 import Bropng from '../../assets/bro.png';
 
-export default function LandingContent({ inmg, title, desc }) {
+export default function LandingContent({
+    img = Bropng,
+    title = 'title',
+    desc = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae tempora vero accusantium nihil mollitia porro voluptatum, perferendis recusandae ducimus quam?',
+}) {
     return (
         <div className='flex justify-between items-center my-16 md:flex-row flex-col '>
-            <div className='md:w-[50rem] md:h-[20rem] w-[10rem] '>
+            <div className='md:w-[30rem] md:h-[20rem] w-[10rem] '>
                 <img
-                    src={Bropng}
+                    src={img}
                     alt='img'
                     className=' object-cover w-full h-full'
                 />
@@ -17,9 +22,7 @@ export default function LandingContent({ inmg, title, desc }) {
                     </h3>
                 </div>
                 <div>
-                    <p className='font-nunito'>
-                        {desc}
-                    </p>
+                    <p className='font-nunito'>{desc}</p>
                 </div>
             </div>
         </div>

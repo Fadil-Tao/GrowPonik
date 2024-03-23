@@ -10,11 +10,9 @@ export default function PricePage() {
                         Pilih Paket Yang Paling Sesuai dengan mu
                     </p>
                     <p className='text-justify text-lg font-nunito'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Odio reiciendis, velit ex atque natus recusandae
-                        sunt, nulla cupiditate dicta vitae aperiam similique
-                        repudiandae molestias aliquid a, voluptas praesentium?
-                        Voluptatibus, debitis!
+                        Ingin memulai kebun hidroponik ? Tapi bingung mulai dari
+                        mana ? Pilih paket di bawah ini untuk memudahkan kamu
+                        memulai perjalanan Perkebunan Hidroponik mu.
                     </p>
                 </div>
                 <div className='w-full h-[20rem]'>
