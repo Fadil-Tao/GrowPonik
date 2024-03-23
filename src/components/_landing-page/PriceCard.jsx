@@ -15,9 +15,6 @@ export default function PreviewPriceCard({ img, title, children, price }) {
             </div>
             <div className='font-nunito'>
                 <ul className='list-disc'>
-                    {/* <li className=''>Test 1</li>
-                    <li className=''>Test 2</li>
-                    <li className=''>Test 3</li> */}
                     {children}
                 </ul>
             </div>
