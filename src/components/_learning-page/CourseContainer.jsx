@@ -5,7 +5,7 @@ export default function CourseCardContainer({ array, title }) {
     return (
         <div className='md:my-8'>
             <DropDownNav title={title} titleSize={'text-3xl font-nunito'}>
-                <ul className='flex flex-wrap justify-evenly'>
+                <ul className='flex flex-wrap md:justify-start justify-evenly'>
                     {array.map((data, key) => {
                         return (
                             <li key={key}>

@@ -8,7 +8,7 @@ export default function ProfileBar() {
                     className='object-cover h-full w-full rounded-full'
                 />
             </div>
-            <p>Dimas Ukin</p>
+            <p>Dimas</p>
         </div>
     );
 }

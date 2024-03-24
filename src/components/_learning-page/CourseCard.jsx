@@ -7,7 +7,7 @@ export default function CourseCard({
     to,
 }) {
     return (
-        <div className='w-[335px] md:h-[20rem] h-auto rounded-md  mt-2'>
+        <div className='w-[335px] md:h-[20rem] h-auto rounded-md mr-4 mt-2'>
             <div className='w-full h-32'>
                 <img
                     src={img}
