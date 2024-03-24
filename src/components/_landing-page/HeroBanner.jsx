@@ -23,7 +23,9 @@ export default function HeroBanner() {
                         <Link to={'/register'}>Bergabung</Link>
                     </div>
                     <div className='border-[1.5px] text-3xl px-2 py-2 text-center rounded-xl bg-black border-white opacity-70'>
-                        <Link className=''>Coba Gratis</Link>
+                        <Link className='' to={'learning'}>
+                            Coba Gratis
+                        </Link>
                     </div>
                 </div>
             </div>
