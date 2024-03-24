@@ -19,7 +19,7 @@ export default function DiscussionCard() {
                     <p className='text-gray-300'>Posted On 32/02/2004</p>
                 </div>
             </div>
-            <div className='w-full '>
+            <div className=' w-2/3 '>
                 <div className='w-44  rounded-md px-2 text-center bg-green-400'>
                     <p className='text-white'>General Question</p>
                 </div>
@@ -28,7 +28,7 @@ export default function DiscussionCard() {
                         Hi Guys!, Im New At Agricultural World Any Suggestions?
                     </h2>
                 </div>
-                <div className='flex '>
+                <div className='flex flex-wrap '>
                     <IconDiscussion
                         amoun={10}
                         title={'Comment'}
