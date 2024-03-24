@@ -29,7 +29,7 @@ export default function BottomNavCourse() {
     if (loading) return <div>Loading...</div>;
 
     return (
-        <div className='flex py-5 bg-white w-full justify-between md:px-40 px-3 fixed bottom-0 border-t-2'>
+        <div className='flex py-5 bg-white w-full justify-between md:px-40 px-10 static bottom-0 border-t-2'>
             <div>
                 <Link
                     to={`/learning/${IdLearning}/${index - 1}`}
@@ -52,7 +52,11 @@ export default function BottomNavCourse() {
             </div>
             <div>
                 <Link
-                    to={`/learning/${IdLearning}/${index + 1}`}
+                    to={
+                        !index
+                            ? `/learning/${IdLearning}/${1}`
+                            : `/learning/${IdLearning}/${index + 1}`
+                    }
                     className={
                         Number(index) === data.modules.length - 1
                             ? 'opacity-10 disabled pointer-events-none'

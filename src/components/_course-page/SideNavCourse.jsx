@@ -32,7 +32,7 @@ export default function SideNavCourse() {
         <>
             <div className='relative z-10'>
                 <div
-                    className={`fixed ${isOpen ? 'right-0' : '-right-[250px]'}  transition-all duration-500 ease-in-out flex`}
+                    className={`fixed ${isOpen ? 'right-0' : 'md:-right-[250px] -right-[260px]'} z-10 transition-all duration-500 ease-in-out flex`}
                 >
                     <div className=''>
                         <button
